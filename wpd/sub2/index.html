@@ -27,26 +27,259 @@ ul.nav a { zoom: 1; }  /* the zoom property gives IE the hasLayout trigger it ne
     <p>If you would like the navigation along the top, simply move the ul.nav to the top of the page and recreate the styling.</p>
     <!-- end .sidebar1 --></div>
   <div class="content">
-    <h1>Instructions</h1>
-    <p>Be aware that the CSS for these layouts is heavily commented. If you do most of your work in Design view, have a peek at the code to get tips on working with the CSS for the liquid layouts. You can remove these comments before you launch your site. To learn more about the techniques used in these CSS Layouts, read this article at Adobe's Developer Center - <a href="http://www.adobe.com/go/adc_css_layouts">http://www.adobe.com/go/adc_css_layouts</a>.</p>
-    <h2>Clearing Method</h2>
-    <p>Because all the columns are floated, this layout uses a clear:both declaration in the .footer rule.  This clearing technique forces the .container to understand where the columns end in order to show any borders or background colors you place on the .container. If your design requires you to remove the .footer from the .container, you'll need to use a different clearing method. The most reliable will be to add a &lt;br class=&quot;clearfloat&quot; /&gt; or &lt;div  class=&quot;clearfloat&quot;&gt;&lt;/div&gt; after your final floated column (but before the .container closes). This will have the same clearing effect.</p>
-    <h3>Logo Replacement</h3>
-    <p>An image placeholder was used in this layout in the .header where you'll likely want to place  a logo. It is recommended that you remove the placeholder and replace it with your own linked logo. </p>
-    <p> Be aware that if you use the Property inspector to navigate to your logo image using the SRC field (instead of removing and replacing the placeholder), you should remove the inline background and display properties. These inline styles are only used to make the logo placeholder show up in browsers for demonstration purposes. </p>
-    <p>To remove the inline styles, make sure your CSS Styles panel is set to Current. Select the image, and in the Properties pane of the CSS Styles panel, right click and delete the display and background properties. (Of course, you can always go directly into the code and delete the inline styles from the image or placeholder there.)</p>
-    <h4>Internet Explorer Conditional Comments</h4>
-    <p>These liquid layouts contain an Internet Explorer Conditional Comment (IECC) to correct two issues. </p>
-    <ol>
-      <li>Browsers are inconsistent in the way they round div sizes in percent-based layouts. If the browser must render a number like 144.5px or 564.5px, they have to round it to the nearest whole number. Safari and Opera round down, Internet Explorer rounds up and Firefox rounds one column up and one down filling the container completely. These rounding issues can cause inconsistencies in some layouts. In this IECC there is a 1px negative margin to fix IE. You may move it to any of the columns (and on either the left or right) to suit your layout needs.</li>
-      <li>The zoom property was added to the anchor within the navigation list since, in some cases, extra white space will be rendered in IE6 and IE7. Zoom gives IE its proprietary hasLayout property to fix this issue.</li>
-    </ol>
-    <h4>Backgrounds</h4>
-    <p>By nature, the background color on any div will only show for the length of the content. This means if you're using a background color or border to create the look of a side column, it won't extend all the way to the footer but will stop when the content ends. If the .content div will always contain more content, you can place a border on the .content div to divide it from the column.</p>
+    <h1>ALL-STARS: East and West</h1>
+    <table cellpadding="0" cellspacing="0" border="0" id="nbaAllStarRosterEast">
+      <tbody>
+        <tr>
+          <td>23</td>
+          <td>* <a title="Link to LeBron James" href="http://www.nba.com/playerfile/lebron_james/index.html">LeBron James</a> (Cavaliers)</td>
+          <td>F</td>
+          <td>6-8</td>
+          <td>250</td>
+          <td>12/30/84</td>
+          <td>St. Vincent-St. Mary HS (OH)/USA</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>* <a title="Link to Paul George" href="http://www.nba.com/playerfile/paul_george/index.html">Paul George</a> (Pacers)</td>
+          <td>F</td>
+          <td>6-9</td>
+          <td>220</td>
+          <td>05/02/90</td>
+          <td>Fresno State/USA</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>* <a title="Link to Carmelo Anthony" href="http://www.nba.com/playerfile/carmelo_anthony/index.html">Carmelo Anthony</a> (Knicks)</td>
+          <td>F</td>
+          <td>6-8</td>
+          <td>240</td>
+          <td>05/29/84</td>
+          <td>Syracuse/USA</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>* <a title="Link to Dwyane Wade" href="http://www.nba.com/playerfile/dwyane_wade/index.html">Dwyane Wade</a> (Heat)</td>
+          <td>G</td>
+          <td>6-4</td>
+          <td>220</td>
+          <td>01/17/82</td>
+          <td>Marquette/USA</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>* <a title="Link to Kyle Lowry" href="http://www.nba.com/playerfile/kyle_lowry/index.html">Kyle Lowry</a> (Raptors)</td>
+          <td>G</td>
+          <td>6-0</td>
+          <td>205</td>
+          <td>03/25/86</td>
+          <td>Villanova/USA</td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>^ <a title="Link to Jimmy Butler" href="http://www.nba.com/playerfile/jimmy_butler/index.html">Jimmy Butler</a> (Bulls)</td>
+          <td>G-F</td>
+          <td>6-7</td>
+          <td>220</td>
+          <td>09/14/89</td>
+          <td>Marquette/USA</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td><a title="Link to DeMar DeRozan" href="http://www.nba.com/playerfile/demar_derozan/index.html">DeMar DeRozan</a> (Raptors)</td>
+          <td>G</td>
+          <td>6-7</td>
+          <td>220</td>
+          <td>08/07/89</td>
+          <td>USC/USA</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><a title="Link to Paul Millsap" href="http://www.nba.com/playerfile/paul_millsap/index.html">Paul Millsap</a> (Hawks)</td>
+          <td>F</td>
+          <td>6-8</td>
+          <td>246</td>
+          <td>02/10/85</td>
+          <td>Louisiana Tech/USA</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td># <a title="Link to Andre Drummond" href="http://www.nba.com/playerfile/andre_drummond/index.html">Andre Drummond</a> (Pistons)</td>
+          <td>C</td>
+          <td>6-11</td>
+          <td>279</td>
+          <td>08/10/93</td>
+          <td>Connecticut/USA</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>^ <a title="Link to Chris Bosh" href="http://www.nba.com/playerfile/chris_bosh/index.html">Chris Bosh</a> (Heat)</td>
+          <td>F</td>
+          <td>6-11</td>
+          <td>235</td>
+          <td>03/24/84</td>
+          <td>Georgia Tech/USA</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><a title="Link to John Wall" href="http://www.nba.com/playerfile/john_wall/index.html">John Wall</a> (Wizards)</td>
+          <td>G</td>
+          <td>6-4</td>
+          <td>195</td>
+          <td>09/06/90</td>
+          <td>Kentucky/USA</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td># <a title="Link to Isaiah Thomas" href="http://www.nba.com/playerfile/isaiah_thomas/index.html">Isaiah Thomas</a> (Celtics)</td>
+          <td>G</td>
+          <td>5-9</td>
+          <td>185</td>
+          <td>02/07/89</td>
+          <td>Washington/USA</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td><a title="Link to Pau Gasol" href="http://www.nba.com/playerfile/pau_gasol/index.html">Pau Gasol</a> (Bulls)</td>
+          <td>C-F</td>
+          <td>7-0</td>
+          <td>250</td>
+          <td>07/06/80</td>
+          <td>FC Barcelona/Spain</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td><a title="Link to Al Horford" href="http://www.nba.com/playerfile/al_horford/index.html">Al Horford</a> (Hawks)</td>
+          <td>C-F</td>
+          <td>6-10</td>
+          <td>245</td>
+          <td>06/03/86</td>
+          <td>Florida/Dominican Republic</td>
+        </tr>
+        <tr>
+          <td colspan="7"><strong>Head Coach:</strong> Tyronn Lue (Cavaliers)</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>&nbsp;</p>
+    <table cellpadding="0" cellspacing="0" border="0" id="nbaAllStarRosterWest">
+      <tbody>
+        <tr>
+          <td>24</td>
+          <td>* <a title="Link to Kobe Bryant" href="http://www.nba.com/playerfile/kobe_bryant/index.html">Kobe Bryant</a> (Lakers)</td>
+          <td>F-G</td>
+          <td>6-6</td>
+          <td>212</td>
+          <td>08/23/78</td>
+          <td>Lower Merion HS (PA)/USA</td>
+        </tr>
+        <tr>
+          <td>35</td>
+          <td>* <a title="Link to Kevin Durant" href="http://www.nba.com/playerfile/kevin_durant/index.html">Kevin Durant</a> (Thunder)</td>
+          <td>F</td>
+          <td>6-9</td>
+          <td>240</td>
+          <td>09/29/88</td>
+          <td>Texas/USA</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>*# <a title="Link to Kawhi Leonard" href="http://www.nba.com/playerfile/kawhi_leonard/index.html">Kawhi Leonard</a> (Spurs)</td>
+          <td>F</td>
+          <td>6-7</td>
+          <td>230</td>
+          <td>06/29/91</td>
+          <td>San Diego State/USA</td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>* <a title="Link to Stephen Curry" href="http://www.nba.com/playerfile/stephen_curry/index.html">Stephen Curry</a> (Warriors)</td>
+          <td>G</td>
+          <td>6-3</td>
+          <td>190</td>
+          <td>03/14/88</td>
+          <td>Davidson/USA</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>* <a title="Link to Russell Westbrook" href="http://www.nba.com/playerfile/russell_westbrook/index.html">Russell Westbrook</a> (Thunder)</td>
+          <td>G</td>
+          <td>6-3</td>
+          <td>200</td>
+          <td>11/12/88</td>
+          <td>UCLA/USA</td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td># <a title="Link to Draymond Green" href="http://www.nba.com/playerfile/draymond_green/index.html">Draymond Green</a> (Warriors)</td>
+          <td>F</td>
+          <td>6-7</td>
+          <td>230</td>
+          <td>03/04/90</td>
+          <td>Michigan State/USA</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td><a title="Link to James Harden" href="http://www.nba.com/playerfile/james_harden/index.html">James Harden</a> (Rockets)</td>
+          <td>G</td>
+          <td>6-5</td>
+          <td>220</td>
+          <td>08/26/89</td>
+          <td>Arizona State/USA</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><a title="Link to Chris Paul" href="http://www.nba.com/playerfile/chris_paul/index.html">Chris Paul</a> (Clippers)</td>
+          <td>G</td>
+          <td>6-0</td>
+          <td>175</td>
+          <td>05/06/85</td>
+          <td>Wake Forest/USA</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td><a title="Link to Klay Thompson" href="http://www.nba.com/playerfile/klay_thompson/index.html">Klay Thompson</a> (Warriors)</td>
+          <td>G</td>
+          <td>6-7</td>
+          <td>215</td>
+          <td>02/08/90</td>
+          <td>Washington State/USA</td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td><a title="Link to Anthony Davis" href="http://www.nba.com/playerfile/anthony_davis/index.html">Anthony Davis</a> (Pelicans)</td>
+          <td>F-C</td>
+          <td>6-10</td>
+          <td>253</td>
+          <td>03/11/93</td>
+          <td>Kentucky/USA</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td><a title="Link to DeMarcus Cousins" href="http://www.nba.com/playerfile/demarcus_cousins/index.html">DeMarcus Cousins</a> (Kings)</td>
+          <td>C-F</td>
+          <td>6-11</td>
+          <td>270</td>
+          <td>08/13/90</td>
+          <td>Kentucky/USA</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td><a title="Link to LaMarcus Aldridge" href="http://www.nba.com/playerfile/lamarcus_aldridge/index.html">LaMarcus Aldridge</a> (Spurs)</td>
+          <td>F</td>
+          <td>6-11</td>
+          <td>240</td>
+          <td>07/19/85</td>
+          <td>Texas/USA</td>
+        </tr>
+        <tr>
+          <td colspan="7"><strong>Head Coach:</strong> Gregg Popovich (Spurs)</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>&nbsp;</p>
     <!-- end .content --></div>
-  <div class="footer">
-    <p>This .footer contains the declaration position:relative; to give Internet Explorer 6 hasLayout for the .footer and cause it to clear correctly. If you're not required to support IE6, you may remove it.</p>
-    <!-- end .footer --></div>
+  <div class="footer"><!-- end .footer --></div>
   <!-- end .container --></div>
 </body>
 </html>
